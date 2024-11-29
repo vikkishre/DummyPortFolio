@@ -1,0 +1,68 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container styling */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+header h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #6A1B9A;
+    margin-bottom: 20px;
+}
+
+/* Bio section layout */
+.bio-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Image styling */
+.bio-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #BF40BF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+/* Content styling */
+.bio-content {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .bio-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bio-image img {
+        margin: 0 auto 20px;
+    }
+
+    .bio-content {
+        margin: 0;
+    }
+}

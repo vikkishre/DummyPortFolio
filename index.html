@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+    <!-- Add jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // jQuery Features
+
+            // Hover effect for navigation links
+            $(".linkcontainer a").hover(
+                function () {
+                    $(this).css("color", "blue");
+                },
+                function () {
+                    $(this).css("color", "black");
+                }
+            );
+
+            // Click event to display video description
+            $("video").click(function () {
+                alert("Video source: " + $(this).attr("src"));
+            });
+
+            // Fade-in effect for sections
+            $(".proj-vid, .events, .course").hide().fadeIn(2000);
+
+            // Display message when an empty image is clicked
+            $("img").click(function () {
+                if (!$(this).attr("src")) {
+                    alert("Image source not found!");
+                }
+            });
+        });
+    </script>
+    <script>
+        // Native JavaScript Features
+
+        // Toggle visibility of sections
+        function toggleVisibility(section) {
+            const element = document.querySelector(`.${section}`);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+
+        // Add dynamic content to the events section
+        function addDynamicContent() {
+            const eventsDiv = document.querySelector(".events");
+            const newEvent = document.createElement("div");
+            newEvent.innerHTML = `
+                <h4>New Dynamic Event</h4>
+                <p>This is a dynamically added event using native JavaScript!</p>
+            `;
+            eventsDiv.appendChild(newEvent);
+        }
+
+        // Handle form submission (if a form is added)
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            alert("Form submitted successfully!");
+        }
+    </script>
+</head>
+<body>
+<div>
+    <div class="navbar-container">
+        <div class="portfolio">
+            <h2>Portfolio</h2>
+        </div>
+        <div>
+            <nav>
+                <div class="linkcontainer">
+                    <a href="./resume.html">Resume</a>
+                    <a href="./bio.html">Bio</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div >
+        <h2 class="heading">Welcome to Vivek's Web Page</h2>
+        <div class="controls">
+            <!-- Buttons to toggle visibility -->
+            <button onclick="toggleVisibility('proj-vid')">Toggle Projects</button>
+            <button onclick="toggleVisibility('events')">Toggle Events</button>
+            <button onclick="toggleVisibility('course')">Toggle Courses</button>
+            <button onclick="addDynamicContent()">Add Dynamic Event</button>
+        </div>
+        <div class="proj-vid">
+            <h3>Projects Where I Contributed</h3>
+            <h4>Exam Proctol App</h4>
+            <video src="./proctol.mp4" controls></video>
+            <h4>Tic Tac Toe Game</h4>
+            <video src="./20241127201453.mp4" poster="./download (1).jpeg" controls></video>
+            <h4>Stone Paper Scissor Game</h4>
+            <video src="./20241127201813.mp4" poster="./images.png" controls></video>
+        </div>
+        <div class="events">
+            <h3>Events Participated</h3>
+            <h4>Aakrithi 2023: Technical and Cultural Fest at CEC</h4>
+            <img src="./Akrithi24_page-0001.jpg" alt="">
+            <img src="./Akrithi24_page-0002.jpg" alt="">
+            <img src="./Akrithi24_page-0003.jpg" alt="">
+            <h4>CodeMeet 2024 at Srinivas University Mukka</h4>
+            <img src="./certi.jpg" alt="Event Image 2">
+        </div>
+        <div class="course">
+            <h3>Courses Completed</h3>
+
+            <h4>Introduction to Web Development</h4>
+            <img src="./Vivek S A-2_page-0001.jpg" alt="Course Image 1">
+            <h4>Java Test by Spoken Tutorial</h4>
+            <img src="./java_page-0001.jpg" alt="Course Image 2">
+            <h4>JavaScript by Infosys Springboard</h4>
+            <img src="./javascript_page-0001.jpg" alt="">
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="contact-info">
+                <h2>Contact Me</h2>
+                <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+            </div>
+            <div class="social-media">
+                <h2>Follow Me</h2>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/yourprofile" target="_blank" aria-label="Facebook">
+                        <img src="facebook-icon.svg" alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com/yourprofile" target="_blank" aria-label="Twitter">
+                        <img src="twitter-icon.svg" alt="Twitter">
+                    </a>
+                    <a href="https://www.instagram.com/yourprofile" target="_blank" aria-label="Instagram">
+                        <img src="instagram-icon.svg" alt="Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
+                        <img src="linkedin-icon.svg" alt="LinkedIn">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="footer-note">© 2024 Your Name. All rights reserved.</p>
+    </footer>
+    
+</div>
+</body>
+</html>

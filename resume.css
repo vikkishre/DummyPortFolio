@@ -1,0 +1,91 @@
+.resume h1{
+   
+    color: #BF40BF;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.resume{
+    /* margin: auto; */
+    text-align: center;
+}
+.pers-info{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+hr{
+    height: 2px;
+    background-color: #BF40BF;
+}
+.profile h3{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #BF40BF;
+}
+.profile p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+/* .profile{
+    /* display: flex;
+    flex-wrap: wrap; 
+} */
+.skills h3{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #BF40BF;
+}
+.skills p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+.w-exp h3{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #BF40BF;
+}
+.w-exp p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+.w-exp li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+.projects h3{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #BF40BF;
+}
+
+.projects li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+.edu h3{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #BF40BF;
+}
+.edu p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+.add h3{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #BF40BF;
+}
+.add p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+.container{
+    width: 80%;
+    border: 1px solid black;
+    margin: auto;
+    padding-left: 15px;
+}
+#w-title {
+    font-size: 22px;
+    font-weight: bold;
+}
